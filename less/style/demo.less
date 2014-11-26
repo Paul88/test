@@ -1,0 +1,20 @@
+@charset "uft-8";
+body{
+	background:#eee;
+}
+/*  我是被编译的 */
+//不会被编译的
+
+
+//less 中的变量 想声明变量的话 一定要用@开头 例如：@变量名：值
+@test_width:300px;
+.box{
+	width:@test_width;
+	height:@test_width;
+	background:#f60;
+	.border;
+}
+
+.border{
+	border:solid pink 5px;
+}
